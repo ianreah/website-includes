@@ -1,0 +1,19 @@
+{% for project in projects %}
+  {% assign column = forloop.index0 | modulo:3 %}
+  {% comment %} start a new row {% endcomment %}
+  {% if column == 0 %}
+    <div class="row-fluid {{ visibility }}">
+  {% endif %}
+
+  {% include project %}
+
+  {% comment %} close the row {% endcomment %}
+  {% if column == 2 %}
+    </div>
+  {% endif %}
+{% endfor %}
+
+{% comment %} close the row if we didn't fill it in the loop {% endcomment %}
+{% if column != 2 %}
+  </div>
+{% endif %}

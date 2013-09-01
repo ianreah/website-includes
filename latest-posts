@@ -1,0 +1,16 @@
+<div class="page-header"><h2>Latest Posts</h2></div>
+
+{% for post in site.posts limit:5 %}
+<div class="row-fluid hidden-phone">
+  <div class="span1 fake-bullet"></div>
+  <div class="span11">{% include latest-post %}</div>
+</div>
+{% endfor %}
+
+<ul class="visible-phone">
+  {% for post in site.posts limit:5 %}
+  <li>{% include latest-post %}</li>
+  {% endfor %}
+</ul>
+
+<p class='text-right'><a href="/blog">Full blog &raquo;</a></p>

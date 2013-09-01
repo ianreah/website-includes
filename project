@@ -1,0 +1,6 @@
+<div class="span4">
+    <h3>{{ project.name }}</h3>
+    <p class="text-center"><img class="img-polaroid" src="{{ project.img-url }}" /></p>
+    {{ project.description }}
+    <p><a class="btn" href="{{ project.url }}">{{ project.call-to-action }} &raquo;</a></p>
+</div>

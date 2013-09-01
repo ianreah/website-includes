@@ -1,0 +1,6 @@
+<form action="http://www.google.com/cse" id="cse-search-box">
+  <input type="hidden" name="cx" value="010218020208768645364:mi9dkwqfeuq" />
+  <input type="hidden" name="ie" value="UTF-8" />
+  <input type="text" name="q" />
+</form>
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
